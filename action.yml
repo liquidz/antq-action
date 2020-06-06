@@ -1,0 +1,13 @@
+name: 'Antq Action'
+description: 'Point out your outdated dependencies'
+inputs:
+  excludes:
+    description: 'Source paths (space separated)'
+    required: true
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.excludes }}

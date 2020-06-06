@@ -1,0 +1,30 @@
+= Antq Action
+
+Github Action to run https://github.com/liquidz/antq[Antq].
+
+
+== Inputs
+
+[cols="20,10,20,50"]
+|===
+| Name | Required | Default | Description
+
+| excludes
+| Yes
+| `""`
+| Artifact names (space separated)
+
+|===
+
+== Example usage
+
+[source,yaml]
+----
+- uses: liquidz/antq-action@v1
+----
+
+== License
+
+Copyright (c) 2020 http://twitter.com/uochan[Masashi Iizuka]
+
+Distributed under the MIT License.
