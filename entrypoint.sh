@@ -1,8 +1,10 @@
 #!bin/bash
 
-echo $#
-echo $@
+EXCLUDES=""
+for artifact in $1; do
+    EXCLUDES="${EXCLUDES} --exclude=${artifact}"
+done
 
-java -jar /tmp/antq/antq.jar --error-format="::error file={{file}}::{{message}}"
+java -jar /tmp/antq/antq.jar ${EXCLUDES} --error-format="::error file={{file}}::{{message}}"
 
 exit $?

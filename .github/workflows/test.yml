@@ -8,4 +8,4 @@ jobs:
       - name: Antq
         uses: ./
         with:
-          excludes: 'foo bar'
+          excludes: 'foo bar actions/checkout'
