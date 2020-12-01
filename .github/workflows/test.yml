@@ -9,3 +9,5 @@ jobs:
         uses: ./
         with:
           excludes: 'foo/bar bar/baz'
+          directories: 'hello world'
+          skips: 'boot pom'
