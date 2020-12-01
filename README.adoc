@@ -12,7 +12,19 @@ Github Action to run https://github.com/liquidz/antq[Antq].
 | excludes
 | Yes
 | `""`
-| Artifact names (space separated)
+| Artifact names (space separated).
+Must be specified `groupId/artifactId` for Java dependencies.
+
+| directories
+| Yes
+| `""`
+| Search paths for projects (space separated).
+
+| skips
+| Yes
+| `""`
+| Project types to skip to search (space separated).
+Must be one of `boot`, `clojure-cli`, `github-action`, `pom`, `shadow-cljs` and `leiningen`.
 
 |===
 
@@ -20,7 +32,7 @@ Github Action to run https://github.com/liquidz/antq[Antq].
 
 [source,yaml]
 ----
-- uses: liquidz/antq-action@v1
+- uses: liquidz/antq-action@master
 ----
 
 == License

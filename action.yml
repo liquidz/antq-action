@@ -2,7 +2,15 @@ name: 'Antq Action'
 description: 'Point out your outdated dependencies'
 inputs:
   excludes:
-    description: 'Source paths (space separated)'
+    description: 'Artifact names to exclude (space separated).'
+    required: true
+    default: ''
+  directories:
+    description: 'Search paths for projects (space separated).'
+    required: true
+    default: ''
+  skips:
+    description: 'Project types to skip to search (space separated). Must be one of `boot`, `clojure-cli`, `github-action`, `pom`, `shadow-cljs` and `leiningen`.'
     required: true
     default: ''
 
@@ -11,3 +19,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.excludes }}
+    - ${{ inputs.directories }}
+    - ${{ inputs.skips }}
