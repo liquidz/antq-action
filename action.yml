@@ -2,7 +2,7 @@ name: 'Antq Action'
 description: 'Point out your outdated dependencies'
 inputs:
   excludes:
-    description: 'Source paths (space separated).'
+    description: 'Artifact names to exclude (space separated).'
     required: true
     default: ''
   directories:
