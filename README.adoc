@@ -37,6 +37,6 @@ Must be one of `boot`, `clojure-cli`, `github-action`, `pom`, `shadow-cljs` and 
 
 == License
 
-Copyright (c) 2020 http://twitter.com/uochan[Masashi Iizuka]
+Copyright (c) 2020-2021 http://twitter.com/uochan[Masashi Iizuka]
 
 Distributed under the MIT License.
