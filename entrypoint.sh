@@ -15,6 +15,6 @@ for skip in $3; do
     SKIPS="${SKIPS} --skip=${skip}"
 done
 
-java -jar /tmp/antq/target/antq-standalone.jar ${EXCLUDES} ${DIRECTORIES} ${SKIPS} --error-format="::error file={{file}}::{{message}}"
+java -jar /tmp/antq/antq.jar ${EXCLUDES} ${DIRECTORIES} ${SKIPS} --error-format="::error file={{file}}::{{message}}"
 
 exit $?
