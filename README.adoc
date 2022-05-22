@@ -32,7 +32,7 @@ Must be one of `boot`, `clojure-cli`, `github-action`, `pom`, `shadow-cljs` and 
 
 [source,yaml]
 ----
-- uses: liquidz/antq-action@master
+- uses: liquidz/antq-action@main
 ----
 
 == License
